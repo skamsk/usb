@@ -1667,11 +1667,11 @@ dl.contact dt {
   font-size: 0.9em;
   color: #696969;
   float: left;
-  width: 6em;
+  /* width: 6em; */
 }
 
 dl.contact dd {
-  margin: 0 0 1em 6em;
+  margin: 0 0 1em 17em;
 }
 
 ul.default {
@@ -2165,7 +2165,9 @@ ol.default li {
 #footer dl.contact dt {
   color: #ddd;
 }
-
+.contact {
+  width: 100%;
+}
 #copyright {
   border-top: solid 1px;
   border-color: #444;
@@ -2659,7 +2661,17 @@ ol.default li {
     padding: 3em 0 1em 0;
   }
 }
-/* .card-description {
-  max-width: 270px;
-  flex-wrap: wrap;
-} */
+.name-adr {
+  width: 15em;
+  padding: 1px 0 0 0px;
+}
+.block-adress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative;
+}
+.adress {
+  margin: auto;
+}
