@@ -221,7 +221,12 @@ $('path').each(function() {
 
 
   // var regIdDiv = '<div class="reg" >'+ '[' + '<span>'+  regId +'</span>' + ']' +' '+ name +'</div>'
-  var regIdDiv = '<div class="reg" >'+ '[' + '<span>'+  regId +'</span>' + ']' +' '+ name +'</div>'
+
+	for (var i = 0; i < idAarr.length; i++) {
+        if (idAarr[i] === regId) {var regIdDiv = '<div class="reg" >'+ '[' + '<span>'+  regId +'</span>' + ']' +' '+ name +'</div>'}
+    }
+    
+	// {var regIdDiv = '<div class="reg" >'+ '[' + '<span>'+  regId +'</span>' + ']' +' '+ name +'</div>'}
 
   $(regIdDiv).appendTo('.regs');
 
@@ -267,3 +272,13 @@ $('.reg').hover(function(e) {
 });
 
 //} // revertFill
+
+
+function contains(arr, elem) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === elem) {
+            return true;
+        }
+    }
+    return false;
+}
