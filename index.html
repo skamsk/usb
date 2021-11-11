@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="assets/js/bot.js" defer></script>
 		<!-- <link rel="stylesheet" href="assets/css/all.css"> -->
 	</head>
 	<body class="homepage is-preload">
@@ -66,7 +67,7 @@
 								<!-- <a href="http://html5up.net">HTML5 UP</a> -->
 								</h2>
 								<p>Есть вопрос, просто заполните форму и мы свяжемся с вами</p>
-								<a href="#" class="button large icon solid">Бесплатная<br>консультация</a>
+								<a href="#" class="button button-message large icon solid">Бесплатная<br>консультация</a>
 							</div>
 
 					</div>
@@ -230,6 +231,40 @@
 				</div>
 
 		</div>
+		<div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Напишите нам</legend>
+					<p>Мы будем очень рады вашему письму</p>
+					<label class="label-auth">
+						<span>Имя</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Телефон</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Текст сообщения</span>
+						<textarea  id="password" type="password" rows="3"></textarea>
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-login" type="submit">Отправить</button>
+						<button class="button button-primary close-button" >Отменить</button>
+
+						<!-- <button class="close-auth button button-primary">Отмена</button> -->
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
