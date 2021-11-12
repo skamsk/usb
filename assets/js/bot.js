@@ -2,8 +2,10 @@ const buttonMessage = document.querySelector('.button-message')
 const modalAuth = document.querySelector('.modal-auth')
 const closeAuth = document.querySelector('.close-button')
 const logInForm = document.getElementById('logInForm')
-const InputLogin = document.getElementById('login')
-const InputPassword = document.getElementById('password')
+const InputFio = document.getElementById('fio')
+const InputPhone = document.getElementById('phone')
+const InputMessage = document.getElementById('message')
+
 
 
 buttonMessage.addEventListener('click', () => {
@@ -21,19 +23,17 @@ closeAuth.addEventListener('click', () => {
 
 
 logInForm.addEventListener('submit', (event) => {
-  send(InputLogin.value,InputPassword.value)
+  send(InputFio.value, InputPhone.value, InputMessage.value)
   // console.log("InputLogin =", InputLogin.value, "InputLogin =", InputPassword.value)
   event.preventDefault()
   console.dir(event)
    modalAuth.style.display = 'none'
 })
 
-const send = (s1, s2) =>{
+const send = (s1, s2, s3) =>{
 var chatid = "-1001621864788";
 var token = "2107046347:AAFl_Gb9XV-6Bt1RfjrVmuVraEGrvQLQprA";
-var text1 = s1;
-var text2 = s2;
-var text = ("InputLogin ="+ s1 + "InputLogin =" + s2)
+var text = ("Фио =" + s1+ "\n\nТелефон =" + s2 + "  \n\nСообщение =" + s3)
 
 //Отправляем текст в наш телеграм канал
 otpravka(token,text,chatid);
