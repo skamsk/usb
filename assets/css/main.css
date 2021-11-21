@@ -1388,6 +1388,50 @@ header.major p {
   top: -1em;
 }
 
+/* NEW */
+.section-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+.delivery-week {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.delivery-card {
+  margin: 15px;
+  position: relative;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.delivery-image {
+  /* background-size: cover; */
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+.delivery-tag {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+  padding: 5px 10px;
+}
+
 /* Forms */
 
 form label {
@@ -2264,7 +2308,12 @@ ol.default li {
   .box.feature2 section {
     margin: 1em 0;
   }
-
+  .partners-main {
+    display: none;
+  }
+  .map {
+    display: none;
+  }
   /* Nav */
 
   #page-wrapper {
@@ -2327,7 +2376,7 @@ ol.default li {
   }
 
   #titleBar .title {
-    display: block;
+    display: none;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.04em;
